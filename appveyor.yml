@@ -1,13 +1,13 @@
 # Test against this version of Node.js
 enviroment:
 matrix:
-#node.js
+# node.js
 - nodejs_version: "12"
 
 # Install scripts. (run after repo cloning)
 install:
   #Get the latest stable version of Node.js or ios.js
-  -ps: Install-Product node $env:nodejs_verion
+  -ps: Install-Product node $env:nodejs_version
   #Install modules
   - npm install
 
